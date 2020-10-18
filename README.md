@@ -23,3 +23,14 @@ ffmpeg -i 你的名字.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 
 # 再使用upload.bat上传
 
 ![](https://cdn.jsdelivr.net/gh/Peter-Highness/free@6e0b404d9f97e084d9559feeecf8face53620a6c/2020/10/17/c3ee5ad7fb65be99ad7224d783070ec6.png)
+
+------
+
+# upload.bat内容
+
+```bat
+git add -A
+git commit -m"%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%"
+git push -u origin master -f
+```
+
