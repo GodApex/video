@@ -31,6 +31,7 @@ ffmpeg -i 你的名字.ts -c copy -map 0 -f segment -segment_list playlist.m3u8 
 ```bat
 git add -A
 git commit -m"%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%"
-git push -u origin master -f
+git branch -M master
+git push -u origin master
 ```
 
